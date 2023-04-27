@@ -9,7 +9,7 @@ select * from employees;
 
 ----/filling by python/---
 
-*drop table employees
+*drop table employees;
 _____________________________________________
 
 
@@ -25,7 +25,7 @@ select * from salary;
 
 INSERT into salary (monthly_salary) values (1000),(1100),(1200),(1300),(1400),(1500),(1600),(1700),(1800),(1900),(2000),(2100),(2200),(2300),(2400),(2500);
 
-*drop table salary
+*drop table salary;
 _____________________________________________
 
 
@@ -43,7 +43,7 @@ select * from employee_salary;
 
 ----/filling by python/---
 
-*drop table employee_salary
+*drop table employee_salary;
 _____________________________________________
 
 
@@ -61,7 +61,7 @@ select * from roles;
 
 INSERT into roles (role_name) values ('Junior Python developer'),('Middle Python developer'),('Senior Python developer'),('Junior Java developer'),('Middle Java developer'),('Senior Java developer'),('Junior JavaScript developer'),('Middle JavaScript developer'),('Senior JavaScript developer'),('Junior Manual QA engineer'),('Middle Manual QA engineer'),('Senior Manual QA engineer'),('Project Manager'),('Designer'),('HR'),('CEO'),('Sales manager'),('Junior Automation QA engineer'),('Middle Automation QA engineer'),('Senior Automation QA engineer');
 
-*drop table roles
+*drop table roles;
 _____________________________________________
 
 
@@ -81,9 +81,9 @@ select * from roles_employee;
 
 ----/filling by python/---
 
-*SELECT * FROM roles_employee ORDER BY role_id
+*SELECT * FROM roles_employee ORDER BY role_id;
 
-*SELECT * FROM roles_employee ORDER BY id
+*SELECT * FROM roles_employee ORDER BY id;
 
-*drop table roles_employee
+*drop table roles_employee;
 _____________________________________________
