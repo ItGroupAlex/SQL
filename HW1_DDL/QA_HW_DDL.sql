@@ -54,10 +54,12 @@ _____________________________________________
 
 create table roles (
 id serial primary key, 
-role_name Varchar NOT null unique
+role_name int NOT null unique
 );
 
 select * from roles;
+
+ALTER TABLE roles ALTER COLUMN role_name TYPE Varchar(50)
 
 INSERT into roles (role_name) values ('Junior Python developer'),('Middle Python developer'),('Senior Python developer'),('Junior Java developer'),('Middle Java developer'),('Senior Java developer'),('Junior JavaScript developer'),('Middle JavaScript developer'),('Senior JavaScript developer'),('Junior Manual QA engineer'),('Middle Manual QA engineer'),('Senior Manual QA engineer'),('Project Manager'),('Designer'),('HR'),('CEO'),('Sales manager'),('Junior Automation QA engineer'),('Middle Automation QA engineer'),('Senior Automation QA engineer');
 
