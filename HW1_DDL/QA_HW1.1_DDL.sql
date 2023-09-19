@@ -3,7 +3,7 @@
 
 
 CREATE TABLE public.students (
-	id serial4 NOT NULL,
+	id serial NOT NULL,
 	"name" varchar(50) NOT NULL,
 	email varchar(50) NOT NULL,
 	"password" varchar(50) NOT NULL,
@@ -83,7 +83,7 @@ select id, name  from students where created_on = '2021-07-12 00:00:00' and name
  
  17. Вывести пользователя у которых id равен 110
  
-select id, name  from students where id = '153';
+select id, name  from students where id = '110';
  
  18. Вывести пользователя у которых id равен 153
  
