@@ -32,19 +32,18 @@ where salary.monthly_salary < 2000
 SELECT employee_salary.employee_id, employees.employee_name, employee_salary.salary_id, salary.monthly_salary   
 FROM employee_salary
 left JOIN employees ON employees.id=employee_salary.employee_id 
-left JOIN salary ON salary.id=employee_salary.salary_id
-where not employee_salary.employee_id in (SELECT id FROM employees)
+JOIN salary ON salary.id=employee_salary.salary_id
+where employees.employee_name is null
 order by employee_salary.employee_id;
 
- 
 
- 4. Вывести все зарплатные позиции  меньше 2000 но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.)
+ 4. Вывести все зарплатные позиции меньше 2000 но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.)
  
 SELECT employee_salary.employee_id, employees.employee_name, employee_salary.salary_id, salary.monthly_salary  
 FROM employee_salary
 left JOIN employees ON employees.id=employee_salary.employee_id 
 left JOIN salary ON salary.id=employee_salary.salary_id
-where not employee_salary.employee_id in (SELECT id FROM employees) and salary.monthly_salary < 2000
+where employees.employee_name is null and salary.monthly_salary < 2000
 order by employee_salary.employee_id;
  
  
